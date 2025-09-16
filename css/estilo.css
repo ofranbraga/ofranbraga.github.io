@@ -1,0 +1,133 @@
+/* Estilo Geral */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6f6;
+    color: #5c4747;
+}
+
+/* Cabeçalho e Navegação */
+header {
+    background-color: #e4c3c3;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #a77c7c;
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+/* Página Inicial */
+.hero {
+    text-align: center;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.texto-hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.texto-hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* Galerias de Fotos */
+.galeria-fotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.galeria-fotos h2 {
+    grid-column: 1 / -1; /* Ocupa a largura toda */
+    font-size: 2.5rem;
+    color: #a77c7c;
+    margin-bottom: 2rem;
+}
+
+.foto {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.foto:hover {
+    transform: scale(1.05);
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Página da Carta */
+.carta {
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    line-height: 1.8;
+    font-size: 1.2rem;
+}
+
+.carta h1 {
+    color: #a77c7c;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #e4c3c3;
+    color: white;
+    margin-top: 2rem;
+}
